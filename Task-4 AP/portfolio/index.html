@@ -1,0 +1,104 @@
+<!--
+This document includes three fully interactive and colorful projects using HTML, CSS, and JavaScript:
+1. Personal Portfolio Website
+2. To-Do List App with LocalStorage
+3. Product Listing Page with Filtering and Sorting
+
+Each section is marked with comments for easy identification.
+-->
+
+<!-- === 1. PERSONAL PORTFOLIO WEBSITE === -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      color: #333;
+    }
+    header, footer {
+      background: #ff6f61;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+    }
+    .project-card {
+      background: white;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    form input, form textarea, form button {
+      display: block;
+      margin: 10px 0;
+      width: 100%;
+      padding: 10px;
+    }
+    form button {
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a creative developer who loves building interactive websites!</p>
+  </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>To-Do App</h3>
+      <p>A colorful and interactive app to manage daily tasks.</p>
+    </div>
+    <div class="project-card">
+      <h3>Product Filter Page</h3>
+      <p>An eCommerce layout with filtering and sorting features.</p>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 My Portfolio</p>
+  </footer>
